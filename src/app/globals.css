@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+/* Tailwind v4 Theme Configuration */
+@theme {
+  --breakpoint-md460: 460px;
+
+  --radius: 8px;
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  /* Backdrop Blur */
+  --backdrop-blur-xs: 2px;
+
+  /* Brand / UI Colors */
+  --color-sys-black: #111111;
+  --color-sys-black-200: #2c2c2c;
+  --color-sys-green: #3dd68c;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-sys-text);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  background: linear-gradient(180deg, #000 0%, #141414 100%);
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-sys-black-200);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-sys-black-200);
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sys-black-200);
+}
