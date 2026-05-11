@@ -29,7 +29,9 @@ const BadTrades = () => {
 
   return (
     <div className="flex flex-col gap-4 border border-red-500/70 rounded-sm p-4">
-      <h1 className="text-2xl font-bold text-white">Bad Trades</h1>
+      <h1 className="text-2xl font-bold text-white">
+        Bad Trades (using useState)
+      </h1>
 
       <div className="flex items-center gap-2">
         <button
@@ -37,7 +39,7 @@ const BadTrades = () => {
           onClick={handleTradeUpdate}
         >
           <PlusIcon className="size-5 mr-2" />
-          <span className="text-sm">Toggle Buy/Sell of Random Trade</span>
+          <span className="text-sm">Update Random Trade Time</span>
         </button>
       </div>
 

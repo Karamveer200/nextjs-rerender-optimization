@@ -31,7 +31,9 @@ const OptimizedTrades = () => {
 
   return (
     <div className="flex flex-col gap-4 border border-sys-green rounded-sm p-4">
-      <h1 className="text-2xl font-bold text-white">Optmized Trades</h1>
+      <h1 className="text-2xl font-bold text-white">
+        Optmized Trades (using Zustand)
+      </h1>
 
       <div className="flex items-center gap-2">
         <button
