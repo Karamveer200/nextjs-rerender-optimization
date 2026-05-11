@@ -63,5 +63,5 @@ body {
 }
 
 .highlight-pulse {
-  animation: pulse-yellow 600ms infinite;
+  animation: pulse-yellow 600ms;
 }
