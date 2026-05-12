@@ -1,4 +1,9 @@
 import { Trade } from '@/components/TradeRow';
+import { twMerge } from 'tailwind-merge';
+
+export const mergeClasses = (...classes: string[]) => {
+  return twMerge(classes);
+};
 
 export const normalizeError = (e: any) => {
   if (e instanceof Error || 'message' in e) {
